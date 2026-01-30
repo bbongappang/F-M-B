@@ -1,5 +1,24 @@
 import streamlit as st
 
+
+
+st.set_page_config(
+    page_title="F-M-B 통신 서비스 플랫폼",
+    page_icon="📡",
+    layout="wide"
+)
+
+st.markdown(
+    """
+    <html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    </head>
+    </html>
+    """,
+    unsafe_allow_html=True
+)
+
 from src.ui import (
     init_session_state,
     render_top_status_bar,
